@@ -11,7 +11,7 @@ ADDONS	=
 
 CC      = gcc
 
-CFLAGS	= -O6 -Wall -ansi -static $(TYPE) $(ADDONS) -g
+CFLAGS	= -O6 -Wall -ansi -static $(TYPE) $(ADDONS) -g -D YYINITDEPTH=2000 -D YYMAXDEPTH=200000
 #-g -pg
 
 LIBS    = -lm
